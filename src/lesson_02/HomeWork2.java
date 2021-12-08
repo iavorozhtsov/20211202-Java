@@ -33,7 +33,7 @@ public class HomeWork2 {
         printString("This is string", 2);
 
         System.out.println("5 - ***************");
-        System.out.println(isVisoc(1503));
+        System.out.println(isVisoc(1996));
 
     }
 
@@ -61,6 +61,6 @@ public class HomeWork2 {
 
     public static boolean isVisoc(int year) {
 
-        return !(((year % 400 != 0) && (year % 100 == 0)) || (year % 4 != 0));
+        return (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0));
     }
 }
