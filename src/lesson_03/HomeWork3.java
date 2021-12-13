@@ -163,15 +163,21 @@ public class HomeWork3 {
 
         int minValue = int_arr[0];
         int minValueIndex = 0;
+        int maxValue = int_arr[0];
+        int maxValueIndex = 0;
 
         for (int i = 0; i < int_arr.length; i++) {
             if (int_arr[i] < minValue){
                 minValue = int_arr[i];
                 minValueIndex = i;
+            } else if (int_arr[i] > maxValue){
+                maxValue = int_arr[i];
+                maxValueIndex = i;
             }
         }
 
         System.out.println("Minimal value = " + minValue + " has index = " + minValueIndex);
+        System.out.println("Maximum value = " + maxValue + " has index = " + maxValueIndex);
     }
 
     public static boolean task_07(int[] int_arr){
