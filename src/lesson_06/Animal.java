@@ -4,6 +4,7 @@ public class Animal {
 
     private static int catCount = 0;
     private static int dogCount = 0;
+    private static int animalCount = 0;
 
     private int maxRunDistance = 10;
     private int maxSwimDistance = 10;
@@ -16,6 +17,7 @@ public class Animal {
         } else {
             dogCount++;
         }
+        animalCount++;
         System.out.println("Welcome the " + type + " with name " + name + "\n");
     }
 
@@ -30,7 +32,7 @@ public class Animal {
     String getAnimalsCount(){
         return "Total dogs created: " + dogCount +
                 "\nTotal cats created: " + catCount +
-                "\nTotal animals created: " + (catCount + dogCount);
+                "\nTotal animals created: " + animalCount;
     }
 
     public String getName() {
