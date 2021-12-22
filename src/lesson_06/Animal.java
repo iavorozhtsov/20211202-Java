@@ -2,7 +2,8 @@ package lesson_06;
 
 public class Animal {
 
-    protected static int animalCount = 0;
+    private static int animalCount = 0;
+
     protected static int catCount = 0;
     protected static int dogCount = 0;
 
@@ -32,7 +33,7 @@ public class Animal {
         }
     }
 
-    String getAnimalsCount(){
+    protected static String getAnimalsCount(){
         return "Cats created " + catCount + "\n" +
                 "Dogs created: " + dogCount + "\n" +
                 "Total animals created: " + animalCount;

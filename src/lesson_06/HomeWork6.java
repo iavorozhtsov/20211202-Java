@@ -27,6 +27,6 @@ public class HomeWork6 {
             System.out.println();
         }
 
-        System.out.println(animalsArray[0].getAnimalsCount());
+        System.out.println(Animal.getAnimalsCount());
     }
 }
