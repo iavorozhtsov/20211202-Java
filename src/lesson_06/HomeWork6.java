@@ -7,28 +7,26 @@
 
 package lesson_06;
 
+import java.util.Random;
+
 public class HomeWork6 {
+    static Random rnd = new Random();
 
     public static void main(String[] args){
-        Cat cat1 = new Cat("Jessy");
-        cat1.run(200);
-        cat1.swim(20);
-        cat1.run(220);
-        System.out.println();
 
-        Cat cat2 = new Cat("Pixi");
-        cat2.run(100);
-        cat2.swim(10);
-        cat2.run(250);
-        System.out.println();
+        Animal[] animalsArray = new Animal[5];
+        animalsArray[0] = new Cat("Jessy");
+        animalsArray[1] = new Cat("Pixi");
+        animalsArray[2] = new Dog("Brut");
+        animalsArray[3] = new Dog("Richard");
+        animalsArray[4] = new Cat("Cookie");
 
-        Dog dog = new Dog("Brut");
-        dog.run(500);
-        dog.swim(10);
-        dog.run(550);
-        dog.swim(15);
-        System.out.println();
+        for (int i = 0; i < animalsArray.length; i++) {
+            animalsArray[i].run(rnd.nextInt(551));
+            animalsArray[i].swim(rnd.nextInt(26));
+            System.out.println();
+        }
 
-        System.out.println(cat2.getAnimalsCount());
+        System.out.println(animalsArray[0].getAnimalsCount());
     }
 }
