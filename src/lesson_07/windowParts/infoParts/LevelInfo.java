@@ -1,6 +1,7 @@
 package lesson_07.windowParts.infoParts;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 
 public class LevelInfo extends JPanel {
@@ -17,6 +18,7 @@ public class LevelInfo extends JPanel {
     private JLabel lblTrapsCount;
 
     public LevelInfo(){
+        setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
         setLayout(new GridLayout(4, 1));
         lblMapSize = new JLabel(PREF_MAP);
         lblMapLevel = new JLabel(PREF_LVL);

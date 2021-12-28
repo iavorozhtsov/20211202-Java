@@ -17,7 +17,10 @@ public class PlayerInfo  extends JPanel {
     private JLabel lblExp;
 
     public PlayerInfo(){
+
+        setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
         setLayout(new GridLayout(4, 1));
+
         lblHP = new JLabel(PREF_HP);
         lblSTR = new JLabel(PREF_STR);
         lblExp = new JLabel(PREF_EXP);

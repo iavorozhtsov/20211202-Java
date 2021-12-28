@@ -9,6 +9,7 @@ public class MainMenu extends JPanel {
     private JButton btnGameExit;
 
     public MainMenu(){
+        setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
         setLayout(new GridLayout(3, 1));
 
         btnGameStart = new JButton("Start game");

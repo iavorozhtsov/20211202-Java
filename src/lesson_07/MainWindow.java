@@ -8,8 +8,8 @@ import java.awt.*;
 
 public class MainWindow extends JFrame {
 
-    int wHeight = 960;
-    int wWidth = 1280;
+    int wHeight = 768;
+    int wWidth = 1024;
     int wStartX = 300;
     int wStartY = 50;
 
@@ -19,8 +19,10 @@ public class MainWindow extends JFrame {
         InfoFrame info = new InfoFrame();
         MapFrame map = new MapFrame();
 
+
         add(map);
         add(info, BorderLayout.EAST);
+
 
         setVisible(true);
     }

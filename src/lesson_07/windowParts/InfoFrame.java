@@ -27,6 +27,7 @@ public class InfoFrame extends JPanel {
     }
 
     private void frameSetup(){
+        setBorder(BorderFactory.createLineBorder(Color.BLACK, 2));
         setBackground(Color.BLUE);
         setLayout(new GridLayout(5, 1));
 

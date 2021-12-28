@@ -10,12 +10,13 @@ public class PlayerControls  extends JPanel {
     private JButton btnDown;
 
     public PlayerControls(){
+        setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
         setLayout(new GridLayout(2, 3));
 
-        btnUp = new JButton("Up");
-        btnRight = new JButton("Right");
-        btnDown = new JButton("Down");
-        btnLeft = new JButton("Left");
+        btnUp = new JButton("\uD83E\uDC15");
+        btnRight = new JButton("\uD83E\uDC16");
+        btnDown = new JButton("\uD83E\uDC17");
+        btnLeft = new JButton("\uD83E\uDC14");
 
         add(new JPanel());
         add(btnUp);
